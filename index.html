@@ -15,7 +15,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: #f8f9fa;
             min-height: 100vh;
-            padding: 2rem;
+            padding-top: 2rem;
         }
 
         .container {
@@ -59,18 +59,6 @@
             object-fit: cover;
         }
 
-        .block-icon {
-            flex-shrink: 0;
-            width: 120px;
-            height: 120px;
-            background-color: #2C3E50;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
-
         .block-content {
             flex: 1;
             min-width: 0;
@@ -90,15 +78,34 @@
             color: #555;
             word-wrap: break-word;
         }
-        .padding-profile{
+        
+        .block-profile{
             padding-top: 5% ;
-            padding-bottom: 10%;
+            padding-bottom: 7%;
+
+        }
+
+        .profile-card{
+            height: auto;
+            width: 40%;
+            border-radius: 20px;
+            object-fit: cover;
+            margin: 0 auto;
+            max-height: 500px;
+        }
+
+        .block-footer{
+            text-align: center;
+            padding-top: 35px;
+            background-color: #90e7e1;
+            padding-bottom: 20px;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             body { padding: 1rem; }
             img{ height: 300px; }
+            .profile-card { padding: 15px; margin: 15px; max-height: 500px;}
             .main-title { font-size: 2rem; margin-bottom: 10px; }
             .block-item { gap: 1rem; padding: 1.5rem; }
             .block-image { width: 120px; height: 100px; }
@@ -111,8 +118,8 @@
     </style>
 </head>
 <body>
-    <div class="padding-profile">
-        <p style="text-align: center;"><img src="images/REPO.png" alt="" height="140"></p>
+    <div class="block-profile">
+        <p style="text-align: center;"><img src="images/REPO.png" alt="" class="profile-card"></p>
     </div>
 
     <div class="container">
@@ -179,11 +186,9 @@
         </div>
     </div>
 
-    <div class="block-item">
-        <a href="Contract.html">Contect Me</a>
-        <a href="Hobbies.html">My Hobbies</a>
-    </div>
     <hr>
-    <footer style="text-align: center;">© Pavadon Maksroy @rmutk.</footer>
+    <footer class="block-footer"><a href="Contract.html">Contect Me</a>
+        <a href="Hobbies.html">My Hobbies</a> <br><br>© Pavadon Maksroy @rmutk.
+    </footer>
 </body>
 </html>
