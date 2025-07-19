@@ -4,44 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4ECDC4;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .block-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            width: 100%;
+        }
+
+        .block-image {
+            flex-shrink: 0;
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .block-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .block-icon {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            background-color: #2C3E50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .block-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .block-title {
+            font-size: 1.5rem;
+            color: #4ECDC4;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            word-wrap: break-word;
+        }
+
+        .block-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            word-wrap: break-word;
+        }
+        .padding-profile{
+            padding-top: 5% ;
+            padding-bottom: 10%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            img{ height: 300px; }
+            .main-title { font-size: 2rem; margin-bottom: 10px; }
+            .block-item { gap: 1rem; padding: 1.5rem; }
+            .block-image { width: 120px; height: 100px; }
+            .block-icon { width: 80px; height: 80px; font-size: 2rem; }
+            .block-title { font-size: 1.3rem; }
+            .block-description { font-size: 0.9rem; }
+        }
+
+       
+    </style>
 </head>
 <body>
-    <img src="images/REPO.png" alt="self photo" height="180px">
-    <ul>
-        <li><h3>Summary</h3>
-            <p>นายภวดล มากสรอย (ตัง) อายุ 20ปี</p>
+    <div class="padding-profile">
+        <p style="text-align: center;"><img src="images/REPO.png" alt="" height="140"></p>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">Summary</h1>
+        <div class="block-item">
+        <div class="block-content">
+            <p class="block-description">My name is Pavadon Maksroy, and my nickname is Tang. I am a Computer Science student at Rajamangala University of Technology Krungthep. I have experience in programming with Java, C#, HTML, and CSS.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">Education</h1>
+        <div class="block-item">
+        <div class="block-content">
             <ul>
-                <li>เกิดวันที่ 18 ตุลาคม พ.ศ.2547</li>
-                <li>สาขาวิทยาการคอมพิวเตอร์</li>
-            </ul>
-        </li>
-        <li><h3>Education</h3>
-            <ul>
-                <li>จบการศึกษาระดับมัธยมศึกษาจาก โรงเรียนราชโบริกานุเคราะห์
-                    <br>วันที่ 31 เมษายน พ.ศ.2566
-                </li>
-                <li>กำลังศึกษาระดับปริญาตรีที่ มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ</li>
-            </ul>
-        </li>
-        <li><h3>Work experience</h3>
-            <ul>
-                <li></li>
-            </ul>
-        </li>
-        <li><h3>Skills</h3>
-            <ul>
-                <li>เขียนโค้ดภาษา java html css</li>
-            </ul>
-        </li>
-        <li><h3>Awards</h3>
-            <ul>
-                <li>-</li>
-            </ul>
-        </li>
-    </ul>
-    <a href="Contract.html">Contact Me</a>
-    <a href="Hobbies.html">My Hobbies</a>
+            <li><b>Primary Education : </b> Damnoen Witthaya School <br>Graduation date 31st March 2017</li>
+            <li><b>Secondary Education : </b> Ratchaborikanukroh School <br>Graduation date 31st April 2023</li>
+            <li><b>Bachelor’s Degree (In Progress) : </b> Rajamangala University of Technology Krungthep
+            <br>Major: Computer Science</li>
+        </ul>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">Work Experience</h1>
+        <div class="block-item">
+        <div class="block-content">
+            <p class="block-description">At present, I do not have any work experience.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">Skills</h1>
+        <div class="block-item">
+            <div class="block-image">
+                <img src="images/blue-screen.gif" alt="blue-screen">
+            </div>
+            <div class="block-content">
+                <h2 class="block-title">Proficient in Microsoft Office (Word, Excel, PowerPoint)</h2>
+                <p class="block-description">I have been using Microsoft Office independently since secondary school, and I have also taken courses related to Microsoft Office to further improve my skills and proficiency with the software.</p>
+            </div>
+        </div>
+
+        <div class="block-item">
+            <div class="block-image">
+                <img src="images/spider-man.gif" alt="great-responsibility">
+            </div>
+            <div class="block-content">
+                <h2 class="block-title">Strong sense of responsibility</h2>
+                <p class="block-description">When given a task, we must complete it within the assigned deadline.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="main-title">Award</h1>
+        <div class="block-item">
+        <div class="block-content">
+            <p class="block-description">I passed the Information Technology Passport Examination (ITPE) on April 28, 2024.</p>
+        </div>
+        <div><img src="images/cert1.jpg" alt="" height="500"></div>
+        </div>
+    </div>
+
+    <div class="block-item">
+        <a href="Contract.html">Contect Me</a>
+        <a href="Hobbies.html">My Hobbies</a>
+    </div>
     <hr>
-    <footer style="text-align: center;">Pavadon Maksroy</footer>
+    <footer style="text-align: center;">© Pavadon Maksroy @rmutk.</footer>
 </body>
 </html>
