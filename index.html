@@ -87,11 +87,11 @@
 
         .profile-card{
             height: auto;
-            width: 40%;
+            width: 20%;
             border-radius: 20px;
             object-fit: cover;
             margin: 0 auto;
-            max-height: 500px;
+            max-height: 1000px;
         }
 
         .block-footer{
@@ -105,7 +105,7 @@
         @media (max-width: 768px) {
             body { padding: 1rem; }
             img{ height: 300px; }
-            .profile-card { padding: 15px; margin: 15px; max-height: 500px;}
+            .profile-card { padding: 15px; margin: 15px; min-height: 200px; min-width: 150px; }
             .main-title { font-size: 2rem; margin-bottom: 10px; }
             .block-item { gap: 1rem; padding: 1.5rem; }
             .block-image { width: 120px; height: 100px; }
@@ -118,8 +118,13 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1 class="main-title">My Resume</h1>
+    </div>
+
+
     <div class="block-profile">
-        <p style="text-align: center;"><img src="images/REPO.png" alt="" class="profile-card"></p>
+        <p style="text-align: center;"><img src="images/me.png" alt="" class="profile-card"></p>
     </div>
 
     <div class="container">
